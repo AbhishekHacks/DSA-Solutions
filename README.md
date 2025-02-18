@@ -1,6 +1,6 @@
 # 🚀 DSA-Solutions
 
-This repository contains my solutions to various **Data Structures and Algorithms (DSA)** problems from platforms like **LeetCode, Codeforces, CodeChef, GeeksforGeeks, and more**. I am solving these problems to strengthen my problem-solving skills and prepare for coding interviews. I will be updating this repository daily and try to cover all the DSA problems that is important with respect to interviews and OAs.
+This repository contains my solutions to various **Data Structures and Algorithms (DSA)** problems from platforms like **LeetCode, CodingNinjas, CodeChef, GeeksforGeeks, and more**. I am solving these problems to strengthen my problem-solving skills and prepare for coding interviews. I will be updating this repository daily and try to cover all the DSA problems that is important with respect to interviews and OAs.
 
 ---
 
