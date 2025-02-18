@@ -44,9 +44,7 @@ Want to add new solutions or optimize existing ones?
 
 ## 🛠 **Languages Used**
 - C++
-- Python
-- Java
-
+  
 _(More languages will be added soon!)_
 
 ---
