@@ -26,7 +26,9 @@ This repository contains my solutions to various **Data Structures and Algorithm
 ---
 
 ## 🔥 **Problem-Solving Profiles**
-🔹 **LeetCode:** https://leetcode.com/u/abhishekjha23/    
+🔹 **LeetCode:** https://leetcode.com/u/abhishekjha23/ 
+
+🔹 **CodingNinjas:** https://www.naukri.com/code360/profile/AbhiHacks 
 
 🔹 **GeeksForGeeks:** https://www.geeksforgeeks.org/user/ajha8tjnf/
 
