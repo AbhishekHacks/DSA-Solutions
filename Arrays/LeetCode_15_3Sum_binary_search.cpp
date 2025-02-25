@@ -4,6 +4,8 @@ Notice that the solution set must not contain duplicate triplets.*/
 
 //This is not the most optimal approach but better than the naive O(n^3)
 
+//Note : this code will get accepted but still it is not optimal
+
 //Time Complexity -- O(n^2logn)
 
 class Solution {
@@ -12,10 +14,26 @@ public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         
         //Optimisation -- O(n^2logn)
+
         
         sort(nums.begin(),nums.end());
         vector<vector<int>> temporary;
         vector<int> v;
+
+        int onlyzeros=1;
+        for(int i=0;i<nums.size();i++){
+            if(nums[i]!=0){
+                onlyzeros=0;
+                break;
+            }
+        }
+        if(onlyzeros==1){
+            v.push_back(0);
+            v.push_back(0);
+            v.push_back(0);
+            temporary.push_back(v);
+            return temporary;
+        }
         
         for(int i=0;i<nums.size()-2;i++){
             for(int j=i+1;j<nums.size()-1;j++){
