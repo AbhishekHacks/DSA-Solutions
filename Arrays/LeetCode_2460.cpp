@@ -10,6 +10,8 @@ Return the resulting array.
 
 Note that the operations are applied sequentially, not all at once.*/
 
+//Time Complexity -- O(n)
+
 class Solution {
 public:
     vector<int> applyOperations(vector<int>& nums) {
