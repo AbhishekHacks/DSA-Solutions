@@ -17,3 +17,51 @@ Explanation: There is no mountain.*/
 
 //Time Complexity -- O(n)
 
+class Solution {
+public:
+    int longestMountain(vector<int>& arr) {
+        int n=arr.size();
+        if(n<3){
+            return 0;
+        }
+        bool isMountain=false;
+        for(int i=1;i<n-1;i++){
+            if(arr[i]>arr[i-1]&&arr[i]>arr[i+1]){
+                isMountain=true;
+                break;
+            }
+        }
+        if(!isMountain){
+            return 0;
+        }
+        bool left=false;
+        bool right=false;
+        int length=0;
+        int max=0;
+        for(int i=0;i<n-1;i++){
+            if(arr[i]<arr[i+1]&&right==false){
+                length++;
+                left=true;
+            }
+            else if(arr[i]>arr[i+1]&&left==true){
+                length++;
+                right=true;
+            }
+            else{
+                if(left==true&&right==true){
+                    if(max<length){
+                        max=length;
+                    }
+                    i--;
+                }
+                left=false;
+                right=false;
+                length=0;
+            }
+        }
+        if(max<length&&left==true&&right==true){
+            max=length;
+        }
+        return max+1;
+    }
+};
