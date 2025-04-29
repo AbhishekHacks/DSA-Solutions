@@ -37,14 +37,10 @@ public:
             if(startIndex+k-1>=index_of_maximum.size()){
                 break;
             }
+            int next_index = index_of_maximum[startIndex+k-1];
+            answer+=(n-next_index);
             if(i==index_of_maximum[startIndex]){
-                int next_index = index_of_maximum[startIndex+k-1];
-                answer+=(n-next_index);
                 startIndex++;
-            }
-            else{
-                int next_index = index_of_maximum[startIndex+k-1];
-                answer+=(n-next_index);
             }
         }
 
