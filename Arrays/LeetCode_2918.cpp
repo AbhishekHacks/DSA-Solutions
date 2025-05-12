@@ -6,7 +6,7 @@ Return the minimum equal sum you can obtain, or -1 if it is impossible.
 
  */
 
-//Time Complexity -- O(n)
+//Time Complexity -- O(n+m)
 
 class Solution {
 public:
