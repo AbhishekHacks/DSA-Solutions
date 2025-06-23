@@ -5,7 +5,7 @@
 class Solution {
 public:
     double myPow(double x, int n) {
-        long long p = abs((long long)n);
+        long long p = llabs(n);
         double answer = 1;
         while(p>0){
             if(p%2==0){
