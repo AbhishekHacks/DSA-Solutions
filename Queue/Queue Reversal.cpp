@@ -1,0 +1,19 @@
+/*Given a queue q containing integer elements, your task is to reverse the queue.*/
+
+//Time Complexity -- O(n)
+
+class Solution {
+  public:
+    void reverseQueue(queue<int> &q) {
+        // code here
+        stack<int>st;
+        while(!q.empty()){
+            st.push(q.front());
+            q.pop();
+        }
+        while(!st.empty()){
+            q.push(st.top());
+            st.pop();
+        }
+    }
+};
