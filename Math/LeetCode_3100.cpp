@@ -10,3 +10,17 @@ Return the maximum number of water bottles you can drink.*/
 
 //Time Complexity -- O(numBottles)
 
+class Solution {
+public:
+    int maxBottlesDrunk(int numBottles, int numExchange) {
+        int answer = numBottles;
+        int emptyBottles = numBottles;
+        while(emptyBottles>=numExchange){
+            emptyBottles-=numExchange;
+            answer+=1;
+            emptyBottles+=1;
+            numExchange+=1;
+        }
+        return answer;
+    }
+};
