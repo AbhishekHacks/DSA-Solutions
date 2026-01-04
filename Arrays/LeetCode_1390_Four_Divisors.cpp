@@ -5,25 +5,28 @@
 class Solution {
 public:
     int sumFourDivisors(vector<int>& nums) {
-        //Brute Force approach 
-        int sum=0;
-        for(int i=0;i<nums.size();i++){
+        int n = nums.size();
+        int answer = 0;
+        for(int i=0;i<n;i++){
             int element = nums[i];
-            int count=2;
-            int temp_sum=1+element;
-            for(int j=2;j<=element/2;j++){
+            int sum = 0;
+            int count = 0;
+            for(int j=1;j<=sqrt(element);j++){
                 if(element%j==0){
-                    temp_sum+=j;
-                    count++;
-                    if(count>4){
-                        break;
+                    if(j==(element/j)){
+                        sum+=j;
+                        count++;
+                    }
+                    else{
+                        sum+=(j+(element/j));
+                        count+=2;
                     }
                 }
             }
             if(count==4){
-                sum+=temp_sum;
+                answer+=sum;
             }
         }
-        return sum;
+        return answer;
     }
 };
